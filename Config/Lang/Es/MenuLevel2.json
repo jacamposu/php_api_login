@@ -1,0 +1,244 @@
+{"1" : {
+						"MenId" : "60a80e8757e03", 
+						"MenName" : "Gestión de archivos", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a809a88d202", 
+						"MenState" : "1", 
+						"MenUrl" : "Repository/All/", 
+						"MenParams" : "action=showGridFiles&recordEdit=1", 
+						"MenIcon" : "far fa-file"
+					},"2" : {
+						"MenId" : "60a8111d6dd10", 
+						"MenName" : "Departamentos", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80a2f2c6a0", 
+						"MenState" : "1", 
+						"MenUrl" : "States/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-globe-americas"
+					},"3" : {
+						"MenId" : "60a81308beb1b", 
+						"MenName" : "Descarga de reportes", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80ab9b42b2", 
+						"MenState" : "1", 
+						"MenUrl" : "Reports/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-file-download"
+					},"4" : {
+						"MenId" : "60a8158553cad", 
+						"MenName" : "Mime", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "Mime/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "far fa-file"
+					},"5" : {
+						"MenId" : "60a8234510c6b", 
+						"MenName" : "Sistema", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80af9cbed4", 
+						"MenState" : "1", 
+						"MenUrl" : "Settings/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-cog"
+					},"6" : {
+						"MenId" : "60a824c6cbcdc", 
+						"MenName" : "Lista de usuarios", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80b1dc378c", 
+						"MenState" : "1", 
+						"MenUrl" : "Users/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-users"
+					},"7" : {
+						"MenId" : "60a825347f35d", 
+						"MenName" : "Dashboard 1", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80b45d566e", 
+						"MenState" : "1", 
+						"MenUrl" : "Estadisticas/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-chart-pie"
+					},"8" : {
+						"MenId" : "60a8122856573", 
+						"MenName" : "Ciudades / Municipios", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80a2f2c6a0", 
+						"MenState" : "1", 
+						"MenUrl" : "Cities/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-globe-americas"
+					},"9" : {
+						"MenId" : "60a814a637747", 
+						"MenName" : "Control de login", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80ab9b42b2", 
+						"MenState" : "1", 
+						"MenUrl" : "LoginLOG/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-sign-in-alt"
+					},"10" : {
+						"MenId" : "60a815c4a7b05", 
+						"MenName" : "Menú", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "Menu/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-bars"
+					},"11" : {
+						"MenId" : "60a824945fad6", 
+						"MenName" : "Perfil de los usuarios", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80b1dc378c", 
+						"MenState" : "1", 
+						"MenUrl" : "ProfilingUser/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-user-cog"
+					},"12" : {
+						"MenId" : "60a8126898f30", 
+						"MenName" : "Paises", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80a2f2c6a0", 
+						"MenState" : "1", 
+						"MenUrl" : "Countries/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-globe-americas"
+					},"13" : {
+						"MenId" : "60a814c7858e1", 
+						"MenName" : "Control de correo", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80ab9b42b2", 
+						"MenState" : "1", 
+						"MenUrl" : "MailLOG/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-envelope"
+					},"14" : {
+						"MenId" : "60a81f250d264", 
+						"MenName" : "Modelador BD *", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-code"
+					},"15" : {
+						"MenId" : "60a824ff6a349", 
+						"MenName" : "Datos usuarios", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80b1dc378c", 
+						"MenState" : "1", 
+						"MenUrl" : "UserData/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-user"
+					},"16" : {
+						"MenId" : "60a814f271f3d", 
+						"MenName" : "Cambios BD", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80ab9b42b2", 
+						"MenState" : "1", 
+						"MenUrl" : "ChangesBDLOG/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-database"
+					},"17" : {
+						"MenId" : "60a81f49b595a", 
+						"MenName" : "Galería de íconos", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "Icons/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-icons"
+					},"18" : {
+						"MenId" : "60a824153c746", 
+						"MenName" : "Config usuarios", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80b1dc378c", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-cogs"
+					},"19" : {
+						"MenId" : "60a8152a42636", 
+						"MenName" : "Transacciones SQL", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80ab9b42b2", 
+						"MenState" : "1", 
+						"MenUrl" : "SqlLogLOG/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-database"
+					},"20" : {
+						"MenId" : "60a82158cc3d1", 
+						"MenName" : "Diccionario de datos", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "Dictionary/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-book"
+					},"21" : {
+						"MenId" : "60a8155ab9ee3", 
+						"MenName" : "Control de passwords", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80ab9b42b2", 
+						"MenState" : "1", 
+						"MenUrl" : "ControlPasswordsLOG/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-key"
+					},"22" : {
+						"MenId" : "60a8222b2bd88", 
+						"MenName" : "Editar wiki", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "Wiki/All/", 
+						"MenParams" : "action=showFormAdd", 
+						"MenIcon" : "fab fa-wikipedia-w"
+					},"23" : {
+						"MenId" : "60a8227b68c7e", 
+						"MenName" : "Generador interfaces *", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-database"
+					},"24" : {
+						"MenId" : "60a83336a2ec1", 
+						"MenName" : "Config Auditor", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80ab9b42b2", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-cog"
+					},"25" : {
+						"MenId" : "60a8230a37fe6", 
+						"MenName" : "Idiomas", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "Lang/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-language"
+					},"26" : {
+						"MenId" : "60a826983551e", 
+						"MenName" : "Idiomas aplicación", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-language"
+					},"27" : {
+						"MenId" : "60a826b5af8ed", 
+						"MenName" : "Config desarrollador", 
+						"MenMenuType" : "2", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-code"
+					}}

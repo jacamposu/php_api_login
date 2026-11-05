@@ -1,0 +1,64 @@
+{"1" : {
+						"MenId" : "60a809a88d202", 
+						"MenName" : "Repositorio", 
+						"MenMenuType" : "1", 
+						"MenParentMenu" : "60a809a88d202", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-paperclip"
+					},"2" : {
+						"MenId" : "60a80b45d566e", 
+						"MenName" : "Dashboard", 
+						"MenMenuType" : "1", 
+						"MenParentMenu" : "60a80b45d566e", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-chart-bar"
+					},"3" : {
+						"MenId" : "60a80b1dc378c", 
+						"MenName" : "Usuarios", 
+						"MenMenuType" : "1", 
+						"MenParentMenu" : "60a80b1dc378c", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-users"
+					},"4" : {
+						"MenId" : "60a80a2f2c6a0", 
+						"MenName" : "Parámetros", 
+						"MenMenuType" : "1", 
+						"MenParentMenu" : "60a80a2f2c6a0", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-map-signs"
+					},"5" : {
+						"MenId" : "60a80af9cbed4", 
+						"MenName" : "Configuración", 
+						"MenMenuType" : "1", 
+						"MenParentMenu" : "60a80af9cbed4", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-tools"
+					},"6" : {
+						"MenId" : "60a80ab9b42b2", 
+						"MenName" : "Auditoría", 
+						"MenMenuType" : "1", 
+						"MenParentMenu" : "60a80ab9b42b2", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-search"
+					},"7" : {
+						"MenId" : "60a80aa943c8a", 
+						"MenName" : "Desarrollador", 
+						"MenMenuType" : "1", 
+						"MenParentMenu" : "60a80aa943c8a", 
+						"MenState" : "1", 
+						"MenUrl" : "javascript:void();", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-code"
+					}}

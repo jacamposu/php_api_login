@@ -1,0 +1,8 @@
+{
+    "urlApiSendgrid": "https://api.sendgrid.com/v3/mail/send",
+    "apiCore": "http://localhost/api.core",
+    "apiLogin": "http://localhost/api.login",
+    "captchaGoogle": "https://www.google.com/recaptcha/api/siteverify",
+    "wsDatabase": "http://localhost/api.database/Query/",
+    "project": "http://localhost/Prototipo"
+}

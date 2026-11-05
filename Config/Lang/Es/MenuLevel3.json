@@ -1,0 +1,172 @@
+{"1" : {
+						"MenId" : "60a8276887561", 
+						"MenName" : "Idioma recursos", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826983551e", 
+						"MenState" : "1", 
+						"MenUrl" : "LangResources/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-language"
+					},"2" : {
+						"MenId" : "60a832fab751f", 
+						"MenName" : "Preguntas de seguridad", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a824153c746", 
+						"MenState" : "1", 
+						"MenUrl" : "SecurityQuestions/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-question"
+					},"3" : {
+						"MenId" : "60a8335ec3396", 
+						"MenName" : "Tipos de query", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a83336a2ec1", 
+						"MenState" : "1", 
+						"MenUrl" : "QueryTypes/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-database"
+					},"4" : {
+						"MenId" : "60a835772553b", 
+						"MenName" : "Grupos de íconos", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826b5af8ed", 
+						"MenState" : "1", 
+						"MenUrl" : "IconsGroup/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-icons"
+					},"5" : {
+						"MenId" : "60a827b195f76", 
+						"MenName" : "Idioma funciones", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826983551e", 
+						"MenState" : "1", 
+						"MenUrl" : "LangFunct/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-language"
+					},"6" : {
+						"MenId" : "60a8344f0a32c", 
+						"MenName" : "Mensajes de login", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a83336a2ec1", 
+						"MenState" : "1", 
+						"MenUrl" : "MsgLogin/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-sign-in-alt"
+					},"7" : {
+						"MenId" : "60a8365d4b4af", 
+						"MenName" : "Inputs formulario", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826b5af8ed", 
+						"MenState" : "1", 
+						"MenUrl" : "InputTypeForm/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-grip-lines"
+					},"8" : {
+						"MenId" : "60a8389e9bee0", 
+						"MenName" : "Grupos usuarios", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a824153c746", 
+						"MenState" : "1", 
+						"MenUrl" : "UserGroups/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-users"
+					},"9" : {
+						"MenId" : "60a8298e847db", 
+						"MenName" : "Idioma diccionario", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826983551e", 
+						"MenState" : "1", 
+						"MenUrl" : "LangDictionary/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-language"
+					},"10" : {
+						"MenId" : "60a836b1d641d", 
+						"MenName" : "Tipo de campo", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826b5af8ed", 
+						"MenState" : "1", 
+						"MenUrl" : "FieldType/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-grip-lines"
+					},"11" : {
+						"MenId" : "60a839052198c", 
+						"MenName" : "Tipos de usuarios", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a824153c746", 
+						"MenState" : "1", 
+						"MenUrl" : "UserTypes/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-user-check"
+					},"12" : {
+						"MenId" : "60a829cdc72b6", 
+						"MenName" : "Idioma JavaScript", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826983551e", 
+						"MenState" : "1", 
+						"MenUrl" : "LangJS/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-language"
+					},"13" : {
+						"MenId" : "60a8372b53aa2", 
+						"MenName" : "Tipo de texto", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826b5af8ed", 
+						"MenState" : "1", 
+						"MenUrl" : "TypeText/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-font"
+					},"14" : {
+						"MenId" : "60a83989761d0", 
+						"MenName" : "Tipos de identificación", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a824153c746", 
+						"MenState" : "1", 
+						"MenUrl" : "IdentificationTypes/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-address-card"
+					},"15" : {
+						"MenId" : "60a829eb392c4", 
+						"MenName" : "Idioma menú", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826983551e", 
+						"MenState" : "1", 
+						"MenUrl" : "LangMenu/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-language"
+					},"16" : {
+						"MenId" : "60a8379691e10", 
+						"MenName" : "Estilos de la aplicación", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826b5af8ed", 
+						"MenState" : "1", 
+						"MenUrl" : "AppStyle/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-palette"
+					},"17" : {
+						"MenId" : "60a839b712b28", 
+						"MenName" : "Estados de los usuarios", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a824153c746", 
+						"MenState" : "1", 
+						"MenUrl" : "UserStatus/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-user-check"
+					},"18" : {
+						"MenId" : "60a837e47d279", 
+						"MenName" : "Alineación", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826b5af8ed", 
+						"MenState" : "1", 
+						"MenUrl" : "Align/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-align-left"
+					},"19" : {
+						"MenId" : "60a837ff4e008", 
+						"MenName" : "Tipo de input Tabla", 
+						"MenMenuType" : "3", 
+						"MenParentMenu" : "60a826b5af8ed", 
+						"MenState" : "1", 
+						"MenUrl" : "InputType/All/", 
+						"MenParams" : "", 
+						"MenIcon" : "fas fa-table"
+					}}

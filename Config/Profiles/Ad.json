@@ -1,0 +1,542 @@
+{
+    "60a809a88d202": {
+        "enabled": "1",
+        "create": "",
+        "read": "",
+        "update": "",
+        "delete": "",
+        "downloads": "",
+        "where": "",
+        "join": ""
+    },
+    "60a80a2f2c6a0": {
+        "enabled": "1",
+        "create": "",
+        "read": "",
+        "update": "",
+        "delete": "",
+        "downloads": "",
+        "where": "",
+        "join": ""
+    },
+    "60a80aa943c8a": {
+        "enabled": "1",
+        "create": "",
+        "read": "",
+        "update": "",
+        "delete": "",
+        "downloads": "",
+        "where": "",
+        "join": ""
+    },
+    "60a80ab9b42b2": {
+        "enabled": "1",
+        "create": "",
+        "read": "",
+        "update": "",
+        "delete": "",
+        "downloads": "",
+        "where": "",
+        "join": ""
+    },
+    "60a80af9cbed4": {
+        "enabled": "1",
+        "create": "",
+        "read": "",
+        "update": "",
+        "delete": "",
+        "downloads": "",
+        "where": "",
+        "join": ""
+    },
+    "60a80b1dc378c": {
+        "enabled": "1",
+        "create": "",
+        "read": "",
+        "update": "",
+        "delete": "",
+        "downloads": "",
+        "where": "",
+        "join": ""
+    },
+    "60a80b45d566e": {
+        "enabled": "1",
+        "create": "",
+        "read": "",
+        "update": "",
+        "delete": "",
+        "downloads": "",
+        "where": "",
+        "join": ""
+    },
+    "60a80e8757e03": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8111d6dd10": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8122856573": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8126898f30": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a81308beb1b": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a814a637747": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a814c7858e1": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a814f271f3d": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8152a42636": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8155ab9ee3": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8158553cad": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a815c4a7b05": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a81f250d264": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a81f49b595a": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a82158cc3d1": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8222b2bd88": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8227b68c7e": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8230a37fe6": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8234510c6b": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a824153c746": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a824945fad6": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a824c6cbcdc": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a824ff6a349": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a825347f35d": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a826983551e": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a826b5af8ed": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8276887561": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a827b195f76": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8298e847db": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a829cdc72b6": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a829eb392c4": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a832fab751f": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a83336a2ec1": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8335ec3396": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8344f0a32c": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a835772553b": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8365d4b4af": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a836b1d641d": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8372b53aa2": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8379691e10": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a837e47d279": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a837ff4e008": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a8389e9bee0": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a839052198c": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a83989761d0": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "60a839b712b28": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    },
+    "nonVerifyProfile": {
+        "enabled": "1",
+        "create": "1",
+        "read": "1",
+        "update": "1",
+        "delete": "1",
+        "downloads": "1",
+        "where": "",
+        "join": ""
+    }
+}

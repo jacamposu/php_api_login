@@ -1,0 +1,12 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Si el archivo o carpeta no existe, redirige a index.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Páginas de error personalizadas
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html

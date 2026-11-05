@@ -1,0 +1,73 @@
+{"code":{
+	"error100":{
+		"message":"Registro ya existe.", 
+		"color":"info", 
+		"icon":"fas fa-exclamation"
+	},
+	"error101":{
+		"message":"Procesamiento de datos.", 
+		"color":"info", 
+		"icon":"fas fa-cog"
+	},
+	"error201":{
+		"message":"Creado", 
+		"color":"success", 
+		"icon":"fas fa-check"
+	},
+	"error202":{
+		"message":"Actualizado", 
+		"color":"success", 
+		"icon":"fas fa-sync-alt"
+	},
+	"error300":{
+		"message":"Redireccionamiento", 
+		"color":"info", 
+		"icon":"fas fa-undo-alt"
+	},
+	"error401":{
+		"message":"No autorizado", 
+		"color":"danger", 
+		"icon":"fas fa-times"
+	},
+	"error402":{
+		"message":"Bloqueado", 
+		"color":"error", 
+		"icon":"fas fa-unlock-alt"
+	},
+	"error403":{
+		"message":"Prohibido", 
+		"color":"danger", 
+		"icon":"fas fa-user-times"
+	},
+	"error404":{
+		"message":"No encontrado", 
+		"color":"danger", 
+		"icon":"fas fa-times"
+	},
+	"error200":{
+		"message":"Ok", 
+		"color":"success", 
+		"icon":"fas fa-check"
+	},
+	"error400":{
+		"message":"Datos enviados incompletos o con formato incorrecto", 
+		"color":"danger", 
+		"icon":"fas fa-times"
+	},
+	"error405":{
+		"message":"Método no permitido", 
+		"color":"danger", 
+		"icon":"fas fa-times"
+	},
+	"error500":{
+		"message":"Error interno del servidor", 
+		"color":"danger", 
+		"icon":"fas fa-times"
+	},
+	"error408":{
+		"message":"Timeout: El servidor agotó el tiempo de espera de la solicitud. De acuerdo con las especificaciones de HTTP: El cliente no produjo una solicitud dentro del tiempo que el servidor estaba preparado para esperar. El cliente PUEDE repetir la solicitud sin modificaciones en cualquier momento posterior. ", 
+		"color":"danger", 
+		"icon":"fas fa-times"
+	}
+}
+}

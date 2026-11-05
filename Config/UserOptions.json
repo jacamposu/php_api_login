@@ -1,0 +1,7 @@
+{
+	"linkProfileUser":"../UserOptions/ProfileUser.php?action=showListView&recordEdit={$UseDatId}",
+	"linkChangeProfile":"../UserOptions/ProfileUser.php?action=showFormEdit&recordEdit={$UseDatId}{$token}",
+	"linkSecQuestion":"../UserOptions/SecurityQuestion.php?action=showFormEdit&recordEdit={$UseDatUser}{$token}",
+	"linkChangePass":"../UserOptions/UpdatePassword.php?action=FormChangePassword&id={$UseDatId}{$token}",
+	"linkCustomize":"../UserOptions/Customize.php"
+}
