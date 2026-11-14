@@ -3,12 +3,17 @@
 <head>
 	<title>Login</title>
 </head>
-	<script language="javascript"></script>
 <body>
-	<p>Hola {$dataUser->UsrId}</p>
-	<p>Usted solicitó la recuperación de su contraseña para su cuenta (<strong>{$dataUser->UsrId} - {$dataUser->UsrEmail}</strong>), en la aplicación <strong>{$app}</strong>.</p>
-	<p>Para confirmar esta petición y establecer una nueva contraseña, por favor haga clic en el siguiente enlace:</p>
-	<a href="{$url}" target="_blank">Recuperar mi usuario</a>
-	<p><strong>Advertencia: </strong>(Este enlace es válido durante 30 minutos desde el momento en que hizo la solicitud. Si el problema persiste comuníquese con el Administrador del Sistema.)</p>
+	<div style="background-color: azure; padding: 10px; border: 1px solid lightblue; font-family: arial;">
+		<p>Hola <strong>{$dataUser->UsrId}</strong></p>
+		<p>Usted solicitó la recuperación de su contraseña para su cuenta (<strong>{$dataUser->UsrId} - {$dataUser->UsrEmail}</strong>), en la aplicación <strong>{$app}</strong>.</p>
+		<p>Para confirmar esta petición y establecer una nueva contraseña, por favor haga clic en el siguiente enlace:</p>
+		<div style="padding: 15px 0px;">
+			<a href="{$url}" target="_blank" style="background-color: navy; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">Recuperar mi usuario</a>
+		</div>
+		<p><strong>Advertencia: </strong>(Este enlace es válido durante 30 minutos desde el momento en que hizo la solicitud. Si el problema persiste comuníquese con el Administrador del Sistema.)</p>
+		<p>Att.</p>
+		<p>Equipo de sistemas.</p>
+	</div>
 </body>
 </html>

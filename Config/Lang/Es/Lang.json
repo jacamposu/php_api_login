@@ -12,7 +12,7 @@
         "BtnResetPwdCancel":"Atrás",
         "DescFormSecQuestion":"Conteste la(s) pregunta(s) de seguridad para recuperar su contraseña",
         "TitleWrongLogin": "Login incorrecto",
-        "WrongUser": "Usuario o password incorrectos",
+        "WrongUser": "Credenciales incorrectas",
         "WrongData": "Los datos ingresados son incorrectos",
         "EmptyData": "Alguno de los datos llegaron vacíos",
         "EmptyUserPass": "Por favor Ingrese sus credenciales para acceder al sistema",

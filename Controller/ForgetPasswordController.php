@@ -112,7 +112,7 @@ class ForgetPasswordController extends MainController
 		$app = $this->_config->app->name;
 		//$url = $this->config->url->app.'/Login/FormForgotPassword/token='.$id;
 		
-		$url = 'http://localhost/Prototipo/Login/ChangePassword/token='.$id;
+		$url = 'http://localhost/DEV/php_client_prototype/Login/ChangePassword/token='.$id;
 
 		//Mensaje
 		$message = "\$message = <<< HTML\n";
@@ -128,7 +128,7 @@ class ForgetPasswordController extends MainController
 		// 	->SetTypeContent($typeContent)
 		// 	->Send();
 
-		file_put_contents("C:\\xampp\\htdocs\\Desarrollo\\mail.html", $message);
+		file_put_contents("C:\\xampp\\htdocs\\DEV\\mailRecoveryPass.html", $message);
 	}
 
 	#endregion

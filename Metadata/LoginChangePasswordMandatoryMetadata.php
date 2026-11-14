@@ -24,8 +24,8 @@ class LoginChangePasswordMandatoryMetadata
 	{
         $infoPage = [];
         $infoPage = $this->GetInfo();
-        $infoPage['Fields'] = $this->LoadForm();
-        $infoPage['Buttons'] = $this->Buttons();
+        $infoPage['fields'] = $this->LoadForm();
+        $infoPage['buttons'] = $this->Buttons();
         return $infoPage;
 	}
 
@@ -51,33 +51,29 @@ class LoginChangePasswordMandatoryMetadata
         return [
             'visible' => [
                 [
-                    'fieldDictionary' => 'passwordOld',
+                    'fieldName' => 'passwordOld',
                     'disabled' => '',
                     'options' => '',
-                    'value' => '',
-                    'metadata' => $this->_dictionary->passwordOld
+                    'value' => ''
                 ],
                 [
-                    'fieldDictionary' => 'passwordNew',
+                    'fieldName' => 'passwordNew',
                     'disabled' => '',
                     'options' => '',
-                    'value' => '',
-                    'metadata' => $this->_dictionary->passwordNew
+                    'value' => ''
                 ],
                 [
-                    'fieldDictionary' => 'passwordNewConfirm',
+                    'fieldName' => 'passwordConfirm',
                     'disabled' => '',
                     'options' => '',
-                    'value' => '',
-                    'metadata' => $this->_dictionary->passwordNewConfirm
+                    'value' => ''
                 ]
             ],
             'hidden' => [
-                ["id" => "urlProject", "value" => $this->_url->project],
-                ["id" => "urlFront", "value" => $this->_url->project.'/Login/LoadForm/'],
-                ["id" => "urlRedirect", "value" => $this->_url->project.'/'],
-                ["id" => "urlChangePwd", "value" => $this->_url->project.'/Login/ChangePassword/'],
-                ["id" => "urlActionForm", "value" => $this->_url->apiLogin.'/ChangePassword/ValidateAndUpdatePassword/']
+                ["id" => "urlFront", "value" => '/Login/LoadForm/'],
+                ["id" => "urlRedirect", "value" => '/'],
+                ["id" => "urlChangePwd", "value" => '/Login/ChangePassword/'],
+                ["id" => "urlActionForm", "value" => '/ChangePassword/ValidateAndUpdatePassword/']
             ]
         ];      
     }
@@ -85,7 +81,8 @@ class LoginChangePasswordMandatoryMetadata
     private function Buttons()
     {
         return [
-            'Submit' => [
+            0 => [
+                'mode' => 'SubmitLogin',
                 'type' => 'button',
                 'name' => 'btn-submit',
                 'classname' => 'btn btn-primary',
@@ -93,7 +90,8 @@ class LoginChangePasswordMandatoryMetadata
                 'icon' => $this->_icon->Login,
                 'text' => $this->_langResource->Login->BtnLoginSubmit
             ],
-            'Cancel' => [
+            1 => [
+                'mode' => 'RedirectLogin',
                 'type' => 'button',
                 'name' => 'btn-cancel',
                 'classname' => 'btn btn-link',

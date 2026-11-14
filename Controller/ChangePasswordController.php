@@ -80,12 +80,17 @@ class ChangePasswordController extends MainController
 		$flag = is_null($this->_passwordOld) ? false : true;
 
 		$this->ValidateInput($flag);
+
+		if(!$this->IsValidNewPass($this->_passwordNew)) 
+			throw new Exception($this->_lang->Validate->PasswordBad, 400);
+		
 		$this->EncryptPasswords($flag);
-		$this->ValidateModel($UserId, $flag);
 
-		$response = $this->_model->ChangePassword($UserId, $this->_passwordNew, $this->_config->security->pwHistory);
+		$response = $this->_model->SP_ControlPasswords($UserId, $this->_passwordOld, $this->_passwordNew, $this->_config->security->pwHistory);
 
-		if(!$response) throw new Exception($this->_lang->Validate->DatabaseError, 500);
+		if(!$response->result[0]->Success){
+			$this->ValidateResponseSP($response->result[0]->ErrorMessage);
+		}
 
 		$this->SendMail($UserId, $body->passwordNew);
 			
@@ -104,26 +109,28 @@ class ChangePasswordController extends MainController
 
 	private function ValidateInput(bool $validatePwOld): void
 	{
-		if(empty($this->_passwordNew)) 
-			throw new Exception($this->_lang->Validate->EmptyNewPw, 400);
+		$error = '';
 
-		if(empty($this->_passwordConfirm)) 
-			throw new Exception($this->_lang->Validate->EmptyConfirmPw, 400);
+		if(empty($this->_passwordNew))
+			$error = $this->_lang->Validate->EmptyNewPw . ', ';
 
+		if(empty($this->_passwordConfirm))
+			$error .= $this->_lang->Validate->EmptyConfirmPw . ', ';
+			
 		if($validatePwOld && empty($this->_passwordOld)) 
-			throw new Exception($this->_lang->Validate->EmptyOldPw, 400);
+			$error .= $this->_lang->Validate->EmptyOldPw . ', ';
+
+		if($error != '')
+			throw new Exception($error, 400);
 
 		if($this->_passwordNew != $this->_passwordConfirm) 
 			throw new Exception($this->_lang->Validate->PasswordNotMatch, 400);
 
 		if($validatePwOld && ($this->_passwordNew == $this->_passwordOld))
 			throw new Exception($this->_lang->Validate->PwSame, 400);
-		
-		if(!$this->IsValidPass($this->_passwordNew)) 
-			throw new Exception($this->_lang->Validate->PasswordBad, 400);
 	}
 
-	private function IsValidPass(string $password):bool
+	private function IsValidNewPass(string $password):bool
 	{
 		$min = 6;
 		$max = 16;
@@ -160,7 +167,7 @@ class ChangePasswordController extends MainController
 		// 	->SetTypeContent($typeContent)
 		// 	->Send();
 
-		file_put_contents("C:\\xampp\\htdocs\\Desarrollo\\mailChanged.html", $message);
+		file_put_contents("C:\\xampp\\htdocs\\DEV\\mailChanged.html", $message);
 	}
 
 	private function EncryptPasswords(bool $encryptPwOld):void
@@ -171,18 +178,18 @@ class ChangePasswordController extends MainController
 			$this->_passwordOld = Util::Encrypt($this->_config->security->tokenPw.$this->_passwordOld);
 	}
 
-	private function ValidateModel(string $UserId, bool $validatePwOld):void
+	private function ValidateResponseSP(string $response):void
 	{
-		// Contrasenia actual incorrecta
-		if($validatePwOld)
-		{
-			$UseId = $this->_model->GetUserIdChangePw($UserId, $this->_passwordOld);
-			if($UseId->result != $UserId) throw new Exception($this->_lang->Validate->PasswordIncorrect, 400);
+		switch ($response) {
+			case 'PasswordIncorrect':
+				throw new Exception($this->_lang->Validate->PasswordIncorrect, 400);
+
+			case 'PasswordExists':
+				throw new Exception($this->_lang->Validate->PasswordExists, 400);
+
+			default:
+				throw new Exception($response, 400);
 		}
-		
-		// Password ya existe en el historico
-		$passExists = $this->_model->GetConPssId($UserId, $this->_passwordNew);
-		if(!empty($passExists->result) && $passExists->result > 0) throw new Exception($this->_lang->Validate->PasswordExists, 400);
 	}
 
 	#endregion

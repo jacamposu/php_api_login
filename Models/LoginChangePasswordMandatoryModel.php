@@ -37,7 +37,7 @@ class LoginChangePasswordMandatoryModel
         return $this->_headersDB->Get($this->_config);
     }
 
-    public function ChangePassword(string $UserId, string $passwordNew, int  $pwHistoryCount)
+    public function SP_ControlPasswords(string $UserId, string $passwordOld, string $passwordNew, int  $pwHistoryCount)
 	{
 		/* Llamado del SP Usp_ControlPasswords_SetPassword */
 		$this->_headersDB = new HttpDatabase();
@@ -46,6 +46,7 @@ class LoginChangePasswordMandatoryModel
 						->SetResoruceModel('SP')
 						->SetParams([
 							':userId' => $UserId,
+							':_passwordOld' => $passwordOld,
 							':passwordNew' => $passwordNew,
 							':pwHistoryCount' => $pwHistoryCount
 						]);

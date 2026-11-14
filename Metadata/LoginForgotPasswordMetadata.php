@@ -23,8 +23,8 @@ class LoginForgotPasswordMetadata
 	{
         $infoPage = [];
         $infoPage = $this->GetInfo();
-        $infoPage['Fields'] = $this->LoadForm($arrayReturn);
-        $infoPage['Buttons'] = $this->Buttons();
+        $infoPage['fields'] = $this->LoadForm($arrayReturn);
+        $infoPage['buttons'] = $this->Buttons();
         return $infoPage;
 	}
 
@@ -53,29 +53,29 @@ class LoginForgotPasswordMetadata
                     'options' => $arrayReturn,
                     "disabled" => "",
                     'value' => '',
-                    "fieldName" => "LoginIdeType",
-                    'metadata' => $this->_dictionary->LoginIdeType
+                    "fieldName" => "LoginIdeType"
+                    // 'metadata' => $this->_dictionary->LoginIdeType
                 ],
                 1 => [
                     'options' => '',
                     "disabled" => "",
                     'value' => '',
-                    "fieldName" => "LoginIdeNumber",
-                    'metadata' => $this->_dictionary->LoginIdeNumber
+                    "fieldName" => "LoginIdeNumber"
+                    // 'metadata' => $this->_dictionary->LoginIdeNumber
                 ],
                 2 => [
                     'options' => '',
                     "disabled" => "",
                     'value' => '',
-                    "fieldName" => "LoginMail",
-                    'metadata' => $this->_dictionary->LoginMail
+                    "fieldName" => "LoginMail"
+                    // 'metadata' => $this->_dictionary->LoginMail
                 ]
             ],
             'hidden' => [
-                ["id" => "urlFront", "value" => $this->_url->project.'/ForgotPassword/LoadForm/'],
-                ["id" => "urlRedirect", "value" => $this->_url->project.'/'],
-                ["id" => "urlChangePwd", "value" => $this->_url->project.'/ChangePassword/Form/'],
-                ["id" => "urlActionForm", "value" => $this->_url->apiLogin.'/ForgetPassword/Validate/']
+                ["id" => "urlFront", "value" => '/ForgotPassword/LoadForm/'],
+                ["id" => "urlRedirect", "value" => '/'],
+                ["id" => "urlChangePwd", "value" => '/ChangePassword/Form/'],
+                ["id" => "urlActionForm", "value" => '/ForgetPassword/Validate/']
             ]
         ];      
     }
@@ -93,16 +93,16 @@ class LoginForgotPasswordMetadata
                 'text' => $this->_langResource->Login->BtnVerify
             ],
             1 => [
-                'mode' => 'CancelLogin',
+                'mode' => 'RedirectLogin',
                 'type' => 'button',
                 'name' => 'btn-cancel',
                 'classname' => 'btn btn-link btn-block mt-2',
-                'url' => $this->_url->project.'/',
+                'url' => '/',
                 'icon' => $this->_icon->Return,
                 'text' => $this->_langResource->Login->BtnResetPwdCancel
             ],
             2 => [
-                'mode' => 'Reset',
+                'mode' => 'ResetLogin',
                 'type' => 'button',
                 'name' => 'btn-reset',
                 'classname' => 'btn btn-link text-info',

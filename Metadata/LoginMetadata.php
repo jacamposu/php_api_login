@@ -65,11 +65,10 @@ class LoginMetadata
                 ]
             ],
             'hidden' => [
-                ["id" => "urlProject", "value" => $this->_url->project],
-                ["id" => "urlFront", "value" => $this->_url->project.'/Login/LoadForm/'],
-                ["id" => "urlRedirect", "value" => $this->_url->project.'/Login/ChangePasswordMandatory/'],
-                ["id" => "urlChangePwd", "value" => $this->_url->project.'/Login/ChangePassword/'],
-                ["id" => "urlActionForm", "value" => $this->_url->apiLogin.'/Login/Validate/']
+                ["id" => "urlFront", "value" => '/Login/LoadForm/'],
+                ["id" => "urlRedirect", "value" => '/Login/ChangePasswordMandatory/'],
+                ["id" => "urlChangePwd", "value" => '/Login/ChangePassword/'],
+                ["id" => "urlActionForm", "value" => '/Login/Validate/']
             ]
         ];      
     }
@@ -79,7 +78,7 @@ class LoginMetadata
         return [
             0 => [
                 'mode' => 'SubmitLogin',
-                'type' => 'button',
+                'type' => 'submit',
                 'name' => 'btn-submit',
                 'classname' => 'btn btn-primary',
                 'event' => [],
@@ -87,19 +86,19 @@ class LoginMetadata
                 'text' => $this->_langResource->Login->BtnLoginSubmit
             ],
             1 => [
-                'mode' => 'CancelLogin',
+                'mode' => 'RedirectLogin',
                 'type' => 'button',
                 'name' => 'btn-cancel',
                 'classname' => 'btn btn-link',
-                'url' => $this->_url->project.'/Login/ForgetPassword/',
+                'url' => 'Login/ForgetPassword/',
                 'icon' => $this->_icon->Padlock,
                 'text' => $this->_langResource->Login->BtnLoginCancel
             ],
             2 => [
-                'mode' => 'Reset',
+                'mode' => 'ResetLogin',
                 'type' => 'button',
                 'name' => 'btn-reset',
-                'classname' => 'btn btn-link text-info',
+                'classname' => 'btn btn-link',
                 'url' => "",
                 'icon' => "fas fa-eraser",
                 'text' => "Limpiar formulario"

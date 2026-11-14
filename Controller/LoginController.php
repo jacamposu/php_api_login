@@ -91,25 +91,15 @@ class LoginController extends MainController
 	{
 		$this->SetUserAndPassword();
 		
-		$this->validateIfUserExists();
-
 		if($this->config->security->recaptchaEnabled) $this->validateRecaptcha();
 
-		$data = $this->GetDataUser();
+		$response = $this->_model->SP_AccessControl($this->_username, $this->_password);
 
-		$this->VerifyInactivityUser($data->CpLastAccess);
-		
-		switch ($data->IdUserStatus) 
-		{
-			case 'A':
-				$this->RegisterAccess();
-				
-				if($this->ForceChangePassword())
-					return $this->ResponseRedirect('ForceChangePass');
+		if($response->statusCode == 200){
 
-				if($this->ChangePwRequired())
-					return $this->ResponseRedirect('ChangePwdRequired');
-				
+			if($response->result[0]->Success == 1){
+				$data = $response->result[0];
+
 				$data = [
 					'UserIdEncrypt' => Util::Encrypt($data->UsrId),
 					'UserSurname' => $data->UsrSurname,
@@ -128,18 +118,9 @@ class LoginController extends MainController
 				];
 
 				return $this->TokenSession($data);
-
-			case 'B':
-				$this->BlockUser();
-				break;
-
-			case 'I':
-				$this->InactivateUser();
-				break;
-
-			case 'E':
-				$this->DeleteUser();
-				break;
+			}else{
+				$this->InterpretResponseSP($response->result[0]->ErrorMessage);
+			}
 		}
 	}
 
@@ -316,14 +297,6 @@ class LoginController extends MainController
 		throw new Exception($this->_lang->Login->InactivityBlocking, 401);
 	}
 
-	// El usuario ha sido eliminado por el administrador del sistema.
-	private function DeleteUser()
-	{	
-		if($this->config->Logs->createLoginLogDB) 
-			$this->_model->RegisterLoginLog($this->_username, 'UEB', $this->failedAttempts);
-
-		throw new Exception($this->_lang->Login->UserDeleted, 401);
-	}
 
 	private function ValidateUserSession(string $userIdEncrypted)
 	{
@@ -334,6 +307,33 @@ class LoginController extends MainController
         if(empty($userId->result)) throw new Exception($this->_lang->Login->UserNotExists, 403);
 
 		return $userId->result;
+	}
+
+	private function InterpretResponseSP($response){
+		// echo $response;
+		switch ($response) {
+			case 'ERROR_WU':
+				throw new Exception($this->_lang->Login->WrongUser,400);
+
+			case 'ERROR_CPR':
+				return $this->ResponseRedirect('ChangePwdRequired');
+
+			case 'ERROR_FCP':
+				return $this->ResponseRedirect('ForceChangePass');
+
+			case 'ERROR_I':
+				throw new Exception($this->_lang->Login->InactivityBlocking, 401);
+
+			case 'ERROR_UAB':
+				throw new Exception($this->_lang->Login->AttemptsBlocking, 401);
+
+			case 'ERROR_UIB':
+				throw new Exception($this->_lang->Login->InactivityBlocking, 401);
+			
+			default:
+				throw new Exception("ERROR NO IDENTIFIFCADO: ".$response, 401);
+				break;
+		}
 	}
 
 	#endregion

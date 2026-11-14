@@ -214,4 +214,21 @@ class LoginModel
 						->SetResoruceModel('GetLang');
         return $this->_headersDB->Get($this->_config);
     }
+
+	public function SP_AccessControl(string $UserId, string $passwordOld){
+		/* Llamado del SP Usp_Login_AccessControl */
+		$this->_headersDB = new HttpDatabase();
+
+		$this->_headersDB->SetModel('Usp_Login_AccessControl')
+						->SetResoruceModel('SP')
+						->SetParams([
+							':_userId' => $UserId,
+							':_password' => $passwordOld,
+							':_daysInactivity' => $this->_config->login->daysInactivity,
+							':_daysForceChangePw' => $this->_config->login->daysForceChangePw,
+							':_crearLog' => $this->_config->Logs->createLoginLogDB,
+							':_numberAttempts' => $this->_config->login->numberAttempts
+						]);
+		return $this->_headersDB->SP($this->_config);
+	}
 }

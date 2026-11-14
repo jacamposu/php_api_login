@@ -120,8 +120,10 @@ class HttpDatabase
 					->SetUrl($config->url->wsDatabaseSP)
 					->SetHeaders($this)
 					->Get()
-					->execute();
+					->decode();
 					
 		$http->close();
+
+		return $result;
 	}
 }
