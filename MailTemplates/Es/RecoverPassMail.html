@@ -1,19 +1,37 @@
 <!DOCTYPE html >
 <html>
 <head>
-	<title>Login</title>
+	<title>Cambie su password</title>
 </head>
 <body>
 	<div style="background-color: azure; padding: 10px; border: 1px solid lightblue; font-family: arial;">
-		<p>Hola <strong>{$dataUser->UsrId}</strong></p>
-		<p>Usted solicitó la recuperación de su contraseña para su cuenta (<strong>{$dataUser->UsrId} - {$dataUser->UsrEmail}</strong>), en la aplicación <strong>{$app}</strong>.</p>
-		<p>Para confirmar esta petición y establecer una nueva contraseña, por favor haga clic en el siguiente enlace:</p>
-		<div style="padding: 15px 0px;">
-			<a href="{$url}" target="_blank" style="background-color: navy; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">Recuperar mi usuario</a>
-		</div>
-		<p><strong>Advertencia: </strong>(Este enlace es válido durante 30 minutos desde el momento en que hizo la solicitud. Si el problema persiste comuníquese con el Administrador del Sistema.)</p>
-		<p>Att.</p>
-		<p>Equipo de sistemas.</p>
+		<p>Hola <strong>{$dataUser->UsrId}</strong>,</p>
+		<p>
+			Hemos recibido una solicitud para restablecer la contraseña de su cuenta:
+			<strong>{$dataUser->UsrId} - {$dataUser->UsrEmail}</strong>, asociada a la aplicación
+			<strong>{$app}</strong>.
+		</p>
+		<p>Si usted realizó esta solicitud, haga clic en el siguiente enlace para crear una nueva contraseña:</p>
+		<p style="text-align:center; margin:20px 0;">
+			<a href="{$url}"
+			target="_blank"
+			rel="noopener noreferrer"
+			style="background-color:#0d6efd;color:#ffffff;padding:12px 24px;text-decoration:none;border-radius:4px;font-weight:bold;">
+				Restablecer contraseña
+			</a>
+		</p>
+		<p>Si usted no realizó esta solicitud, puede ignorar este mensaje de forma segura. Su contraseña actual permanecerá sin cambios.</p>
+		<p>
+			<strong>Importante:</strong>
+			 Por motivos de seguridad, este enlace expirará en 
+			<strong>30 minutos</strong>
+			 contados desde el momento de la solicitud.
+		</p>
+		<p>Si tiene inconvenientes para acceder a su cuenta o necesita asistencia adicional, comuníquese con el Administrador del Sistema.</p>
+		<p>
+			Atentamente,<br>
+			<strong>Equipo de Sistemas</strong>
+		</p>
 	</div>
 </body>
 </html>

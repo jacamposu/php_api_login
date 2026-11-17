@@ -267,6 +267,12 @@ class LoginController extends MainController
 		$this->_username = ScapeStr::Clean(($body->username));
 		$this->_password = Util::Encrypt(ScapeStr::Clean(($this->config->security->tokenPw.$body->password)));
 		$this->_ip = "123";//ScapeStr::Clean(($body->ip)) ?? Util::GetIP();
+
+
+		$time = $body->time ?? null;
+		if(time() - $time < 3){
+			throw new Exception("Demasiado rápido para ser un humano, tómate tu tiempo!", 400);
+		}
 	}
 	
 	private function validateRecaptcha()

@@ -32,6 +32,7 @@ class LoginMetadata
     {
         return [
             'service' => 'ON',
+            'time' => time(),
             'pageTitle' => 'Login',
             'nameForm' => 'FormLogin',
             'iconForm' => $this->_icon->Login,
@@ -93,7 +94,7 @@ class LoginMetadata
                 'url' => 'Login/ForgetPassword/',
                 'icon' => $this->_icon->Padlock,
                 'text' => $this->_langResource->Login->BtnLoginCancel
-            ],
+            ]/*,
             2 => [
                 'mode' => 'ResetLogin',
                 'type' => 'button',
@@ -102,7 +103,7 @@ class LoginMetadata
                 'url' => "",
                 'icon' => "fas fa-eraser",
                 'text' => "Limpiar formulario"
-            ]
+            ]*/
         ];
     }
 }

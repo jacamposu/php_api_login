@@ -100,7 +100,7 @@ class LoginForgotPasswordMetadata
                 'url' => '/',
                 'icon' => $this->_icon->Return,
                 'text' => $this->_langResource->Login->BtnResetPwdCancel
-            ],
+            ]/*,
             2 => [
                 'mode' => 'ResetLogin',
                 'type' => 'button',
@@ -109,7 +109,7 @@ class LoginForgotPasswordMetadata
                 'url' => "",
                 'icon' => "fas fa-eraser",
                 'text' => "Limpiar formulario"
-            ]
+            ]*/
         ];
     }
 }

@@ -1,12 +1,12 @@
 {
     "Login":{
-        "TitleFormLogin": "Iniciar sesión",
+        "TitleFormLogin": "Bienvenid@",
         "DescFormLogin": "Ingrese sus credenciales para acceder al sistema",
         "RecaptchaText": "Demuestra que no eres un robot",
-        "TitleFormResetPwd": "Recuperar mi contraseña",
-        "DescFormResetPwd": "Para recuperar tu contraseña, primero necesitamos validar que seas tú!",
+        "TitleFormResetPwd": "Recuperación de contraseña",
+        "DescFormResetPwd": "Para proteger tu información, primero debemos verificar tu identidad.",
         "SelectIdeTypField": "Seleccione tipo de identificación",
-        "BtnLoginSubmit": "Acceder",
+        "BtnLoginSubmit": "Iniciar sesión",
         "BtnLoginCancel": "¡He olvidado mi contraseña!",
         "BtnVerify":"Verificar mis datos",
         "BtnResetPwdCancel":"Atrás",
