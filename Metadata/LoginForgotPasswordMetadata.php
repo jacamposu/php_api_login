@@ -32,6 +32,7 @@ class LoginForgotPasswordMetadata
     {
         return [
             'service' => 'ON',
+            'time' => time(),
             'pageTitle' => 'Login',
             'nameForm' => 'ForgotPassword',
             'iconForm' => $this->_icon->Key,

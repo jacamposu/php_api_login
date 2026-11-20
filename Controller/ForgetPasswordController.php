@@ -56,6 +56,11 @@ class ForgetPasswordController extends MainController
 
 		$body = json_decode(file_get_contents("php://input"));
 		
+		$time = $body->time ?? null;
+		if(time() - $time < 3){
+			throw new Exception("Demasiado rápido para ser un humano, tómate tu tiempo!", 400);
+		}
+
 		$this->ValidateMandatoryData($body);
 
 		// Validación recaptcha
@@ -109,10 +114,8 @@ class ForgetPasswordController extends MainController
 		$subject = $this->_lang->Login->emailSubject;
 		$typeContent = "text/html";
 		$mailFrom = $this->_config->mail->from;
-		$app = $this->_config->app->name;
-		//$url = $this->config->url->app.'/Login/FormForgotPassword/token='.$id;
-		
-		$url = 'http://localhost/Prototipo/Login/ChangePassword/token='.$id;
+		$app = $this->_config->app->name;		
+		$url = $this->_config->url->app_front.'Login/ChangePassword/token='.$id;
 
 		//Mensaje
 		$message = "\$message = <<< HTML\n";
@@ -128,7 +131,7 @@ class ForgetPasswordController extends MainController
 		// 	->SetTypeContent($typeContent)
 		// 	->Send();
 
-		file_put_contents("D:\\DEV\\mailRecoveryPass.html", $message);
+		file_put_contents($this->_config->path->pathApp."mailRecoveryPass.html", $message);
 	}
 
 	#endregion

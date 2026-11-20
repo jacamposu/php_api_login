@@ -71,6 +71,11 @@ class ChangePasswordController extends MainController
 		$body = json_decode(file_get_contents("php://input"));
 		$this->_headers = getallheaders();
 
+		$time = $body->time ?? null;
+		if(time() - $time < 3){
+			throw new Exception("Demasiado rápido para ser un humano, tómate tu tiempo!", 400);
+		}
+
 		$this->_passwordOld = isset($body->passwordOld) ? ScapeStr::Clean($body->passwordOld) : null;
 		$this->_passwordNew = ScapeStr::Clean($body->passwordNew);
 		$this->_passwordConfirm = ScapeStr::Clean($body->passwordConfirm);

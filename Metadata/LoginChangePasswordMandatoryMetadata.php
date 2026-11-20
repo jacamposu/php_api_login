@@ -33,6 +33,7 @@ class LoginChangePasswordMandatoryMetadata
     {
         return [
             'service' => 'ON',
+            'time' => time(),
             'pageTitle' => 'ChangePassword',
             'nameForm' => 'FormLogin',
             'iconForm' => $this->_icon->Key,

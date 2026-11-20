@@ -104,12 +104,10 @@ class LoginModel
     }
 
 
-    public function RegisterSessionLogout(string $idUser, string $lastAccess)
+    public function RegisterSessionLogout($idLogin)
 	{
 		$body = [
-			':IdUser' => $idUser, 
-			':IdProblem' => 'EA',
-			':lastAccess' => $lastAccess
+			':loginId' => $idLogin
 		];
 
         $this->_headersDB = new HttpDatabase();

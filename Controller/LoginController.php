@@ -72,11 +72,9 @@ class LoginController extends MainController
     {
 		$this->response->VerifyMethod("POST");
 
-		$body = json_decode(file_get_contents("php://input"));
-	
-		$user = $this->ValidateUserSession($body->user_id);
+		$headers = getallheaders();
 
-		$logout = $this->_model->RegisterSessionLogout($user->data->UsrId, $user->data->CpLastAccess);
+		$logout = $this->_model->RegisterSessionLogout($headers['loginId']);
 
 		if(!$logout) throw new Exception($this->_lang->Login->FailedInsert, 400);
 		
@@ -114,6 +112,7 @@ class LoginController extends MainController
 					'CreationDate' => $data->CreationDate,
 					'UseLastAccess' => $data->CpLastAccess,
 					'UseEmail' => $data->UsrEmail,
+					'LoginId' => $data->IdLogin,
 					'UseId' => $this->_username
 				];
 
